@@ -1,11 +1,12 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-    <h1 className="font-semibold text-center">
-      Daniel Martez: Portfolio
-    </h1>
+    <div>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+        <h1 className="font-semibold text-center text-3xl">
+        Daniel Martez: Portfolio
+        </h1>
+    </div>
     </div>
   );
 }
