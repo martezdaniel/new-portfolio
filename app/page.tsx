@@ -1,20 +1,6 @@
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black">
-        <div className="flex flex-col items-center gap-6 text-center">
-          <h1 className="text-4xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            Daniel Martez: Portfolio
-          </h1>
-          <p className="text-xl leading-8 text-zinc-600 dark:text-zinc-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vitae
-            dolor ratione, ipsa aut deleniti alias cumque possimus, nam
-            voluptate autem voluptatem quae quibusdam quisquam provident non
-            laudantium, id modi?
-          </p>
-        </div>
-      </main>
-    </div>
+    <h1 className="text-2xl">Home</h1>
   );
 }
 
