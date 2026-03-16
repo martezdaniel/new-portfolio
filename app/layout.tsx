@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import Image from "next/image";
 
 // tailwind docs: https://tailwindcss.com/docs/installation/using-vite
 
@@ -38,7 +39,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         {/* header and nav bar */}
         <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
           <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black">
@@ -47,13 +50,45 @@ export default function RootLayout({
                 Daniel Martez: Portfolio
               </h1>
               <nav>
-                {navLinks.map(
-                  (x) =>
-                    <Link className="p-5 text-lg" key={x.id} href={x.href}>{x.name}</Link>
-                )}
+                {navLinks.map((x) => (
+                  <Link className="p-5 text-lg" key={x.id} href={x.href}>
+                    {x.name}
+                  </Link>
+                ))}
               </nav>
               {children}
               {/* footer */}
+              <div className="flex p-[5%]">
+                <Link
+                  href={"https://www.linkedin.com/in/daniel-martez-23a2912b0/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-5"
+                >
+                  <Image
+                    className="dark:invert"
+                    src="/linkedin.png"
+                    alt="LinkedIn icon from https://www.flaticon.com/"
+                    width={40}
+                    height={40}
+                  />
+                </Link>
+                <Link 
+                  href={"https://github.com/martezdaniel"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-5"
+                  >
+                    <Image
+                    className="dark:invert"
+                    src="/github.png"
+                    alt="GitHub icon from https://www.flaticon.com/"
+                    width={40}
+                    height={40}
+                    />
+                </Link>
+              </div>
+              <p>Created and deployed using Vercel</p>
             </div>
           </main>
         </div>
