@@ -43,20 +43,22 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {/* header and nav bar */}
-        <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-          <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black">
+        <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-gray-900">
+          <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-gray-900">
             <div className="flex flex-col items-center gap-6 text-center">
               <h1 className="text-4xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
                 Daniel Martez: Portfolio
               </h1>
               <nav>
                 {navLinks.map((x) => (
-                  <Link className="p-5 text-lg" key={x.id} href={x.href}>
+                  <Link className="p-5 text-lg dark:text-zinc-50" key={x.id} href={x.href}>
                     {x.name}
                   </Link>
                 ))}
               </nav>
+              <div className="m-10">
               {children}
+              </div>
               {/* footer */}
               <div className="flex p-[5%]">
                 <Link
@@ -88,7 +90,7 @@ export default function RootLayout({
                     />
                 </Link>
               </div>
-              <p>Created and deployed using Vercel</p>
+              <p className="dark:text-zinc-50">Created and deployed using Vercel</p>
             </div>
           </main>
         </div>
