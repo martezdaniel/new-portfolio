@@ -2,18 +2,33 @@ export type Project = {
     slug: string;
     title: string;
     description: string;
-    image: string;
-    alt: string;
+    shortdesc: string;
+    images: {src: string, alt: string, width: number, height: number}[];
     links: {label: string, url: string}[]; /* [] empty array at the end means links is an array of objects */
 };
+
+// need type for recent project here. should always update based on the first element in the array
 
 export const projects: Project [] = [
     {
         slug: "photo-gallery",
         title: "Vacation Photo Gallery",
         description: "This is a very simple solo project that I created to give myself a refresher on front-end development. I’ve tried to make projects in the past outside of assingments and school projects but I either didn’t finish them or the idea just felt far out at the time. For me, making this my first deployed project is a great start and I feel very encouraged to push myself into better HTML development.  I always wanted to create a photo gallery of some sort, and I thought that creating one that includes photos of trips that I’ve been on with family is a great way for me to look back on great memories that I’m grateful I got to share with them. This was written only using HTML, CSS, and JavaScript. I designed this project to have responsive view on both desktop and mobile, along with a simple color scheme and font size for better accessibility. I figured a nice light blue/white background would be a nice touch that blends in and fits the theme for each trip. Almost all of the photos consist of nature and outdoors, and for the images that don’t, it still feels like they fit in. Feel free to check out the deployed website and the source code by clicking on the buttons below!",
-        image: "/photogallery.png",
-        alt: "Home page of photo gallery website",
+        shortdesc: "Small HTML project I created to showcase simple skills and display my favorite photos from places I’ve been to.",
+        images: [
+            {
+                src: "/photogallery.png",
+                alt: "Screenshot of home page of Vacation Photo Gallery website",
+                width: 1024,
+                height: 489
+            },
+            {
+                src: "/photogallery2.png",
+                alt: "Screenshot of Denver page from Vacation Photo Gallery website",
+                width: 1024,
+                height: 489
+            }
+        ],
         links: [
             {
                 label: "View Website",
@@ -21,7 +36,39 @@ export const projects: Project [] = [
             },
             {
                 label: "Source Code",
-                url: "https://github.com/martezdaniel/photo-gallery",
+                url: "https://github.com/martezdaniel/photo-gallery"
+            }
+        ]
+    },
+    {
+        slug: "ucfrugal",
+        title: "UCFrugal",
+        description: "This is another group project that I worked on during my final two semesters at UCF, in the fall of 2023 into the spring of 2024. It was a whole new different learning experience that took only a fraction of what I knew with project development, and expanded it much further. Instead of just working on wireframes and brainstorming ideas for a possible project, we had the chance to do that and more by building an actual website for our idea. My assigned roles in the project were to mainly handle bits of the backend, handle parts of our prototyping and use cases, and also perform some research for our authentication feature.       UCFrugal is an advertising website dedicated towards UCF students and staff. We wanted to branch out using the ideas and concepts of other websites such as eBay, Facebook Marketplace, and Craigslist, and make something that resonates more with us, while also attempting to combat the struggles that users face with other advertising and e-commerce websites, whether that be fears of insecure transactions or troubles with trying to search for items listed.       To develop this project, we used Figma for the wireframes, and we used WordPress with a fair amount of plugins (ex: Classified Listings, LoginPress, Elementor, WP 2FA, and Better Messages) to power the site and provide it’s needed functionalities. We also used Flywheel to host the website, but we had to shut down the hosting as we were paying for it out of our own pockets.       Feel free to click the buttons below to see UCFrugal’s documentation and wireframes, as well as our group’s presentations from both the fall and spring semesters we worked in.",
+        shortdesc: "Group project that I worked on with four other classmates at UCF during my final fall and spring semester before graduation. Our concept was to create an advertising website specifically for UCF students and staff.",
+        images: [
+            {
+                src: "/ucfrugal2.png",
+                alt: "Screenshot of home page from UCFrugal website",
+                width: 1024,
+                height: 489
+            }
+        ],
+        links: [
+            {
+                label: "Documentation",
+                url: "https://drive.google.com/file/d/1lEbiw0DFUTGa1CegZGXOGg4L5zFun_4-/view"
+            },
+            {
+                label: "Wireframes",
+                url: "https://www.figma.com/proto/mq9WpxGUwfyr0p8LJUjnc4/Hi-Fi-Prototypes?type=design&node-id=209-13062&t=8MCxZNo8jwPN9roL-0&scaling=min-zoom&page-id=8%3A870&starting-point-node-id=209%3A12613"
+            },
+            {
+                label: "Fall 2023 Presentation",
+                url: "https://drive.google.com/file/d/1_6c0qKcwB_77Mt76Zz688fre5eunzjos/view",
+            },
+            {
+                label: "Spring 2024 Presentation",
+                url: "https://drive.google.com/file/d/1HBofhB151FZ7-Ct8ocoXE74e1AaOhL6k/view"
             }
         ]
     }
