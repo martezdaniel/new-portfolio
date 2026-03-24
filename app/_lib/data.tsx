@@ -71,5 +71,47 @@ export const projects: Project [] = [
                 url: "https://drive.google.com/file/d/1HBofhB151FZ7-Ct8ocoXE74e1AaOhL6k/view"
             }
         ]
+    },
+    {
+        slug: "arthop",
+        title: "ArtHop",
+        description: "ArtHop is a group project that I worked on with four other classmates during my junior year at the University of Central Florida. We worked on this project during the spring semester of 2023 for a class that was dedicated to design in UI/UX. The goal of this project was to develop an idea for an educational application that we believed would be very helpful and informational for users who want to learn more about art history.",
+        shortdesc: "Group project that I worked on at UCF with four other classmates as well. This was presented as more of a concept instead of a website, but it was a project that helped us understand the full process of creating a product that has a purpose to help our target audience.",
+        images: [
+            {
+                src: "/arthop.png",
+                alt: "ArtHop logo",
+                width: 600,
+                height: 338
+            },
+            {
+                src: "/arthop2.png",
+                alt: "Screenshot of ArtHop home page",
+                width: 757,
+                height: 1480
+            },
+            {
+                src: "/arthop3.png",
+                alt: "Screenshot of ArtHop discussion page",
+                width: 746,
+                height: 1477
+            },
+            {
+                src: "/arthop4.png",
+                alt: "Screenshot of welcome message from ArtHop login/register screen",
+                width: 1024,
+                height: 489
+            }
+        ],
+        links: [
+            {
+                label: "Documentation",
+                url: "https://drive.google.com/file/d/19ZUbHad3eAphUdwfFUKR0oxpkaeyKzAW/view"
+            },
+            {
+                label: "Prototype",
+                url: "https://www.figma.com/proto/ojPXDXEPsJpQUKTF7L1L66/ArtHop-High-Fidelity-Prototype-Final?node-id=1127-184&scaling=scale-down&page-id=0%3A13759&starting-point-node-id=1127%3A184"
+            }
+        ]
     }
 ]
