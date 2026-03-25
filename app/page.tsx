@@ -1,4 +1,7 @@
 import Image from "next/image";
+import {Project, projects} from "./_lib/data"
+
+const featured = projects[0]
 
 export default function Home() {
   return (
@@ -7,15 +10,17 @@ export default function Home() {
         <div className="grid p-5">
           <Image
             className="w-full h-auto object-fill aspect-[2 / 1] rounded-md ring-3 shadow-lg/50"
-            src={"/photogallery2.png"}
-            alt="Screenshot of Denver page from Vacation Photo Gallery website"
-            width={1024}
-            height={489}
+            src={featured.images[1]}
+            alt={featured.images[1].alt}
+            width={featured.images[1].width}
+            height={featured.images[1].height}
           />
+          <div>
+          <h2 className="text-xl font-medium">{featured.title}</h2>
           <p className="dark:text-zinc-50">
-            Small HTML project I created to showcase simple skills and display
-            my favorite photos from places I’ve been to.
+            {featured.shortdesc}
           </p>
+          </div>
         </div>
     </>
   );
