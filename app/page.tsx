@@ -6,7 +6,7 @@ const featured = projects[0]
 export default function Home() {
   return (
     <>
-        <h1 className="text-2xl dark:text-zinc-50">Most Recent Project</h1>
+        <h1 className="text-2xl dark:text-zinc-50 text-center">Most Recent Project</h1>
         <div className="grid p-5">
           <Image
             className="w-full h-auto object-fill aspect-[2 / 1] rounded-md ring-3 shadow-lg/50"
@@ -16,8 +16,8 @@ export default function Home() {
             height={featured.images[1].height}
           />
           <div>
-          <h2 className="text-xl font-medium">{featured.title}</h2>
-          <p className="dark:text-zinc-50">
+          <h2 className="text-xl font-medium text-center">{featured.title}</h2>
+          <p className="dark:text-zinc-50 text-center">
             {featured.shortdesc}
           </p>
           </div>

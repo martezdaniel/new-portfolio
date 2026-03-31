@@ -1,4 +1,5 @@
 # Progress Log
+
 - added all necessary pages
 - applied theme (subject to change)
 - added some content to pages (about page and home page)

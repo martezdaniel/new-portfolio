@@ -43,10 +43,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {/* header and nav bar */}
-        <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-gray-900">
-          <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-gray-900">
-            <div className="flex flex-col items-center gap-6 text-center">
-              <h1 className="text-4xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+        <div className="flex min-h-screen bg-zinc-50 font-sans justify-center dark:bg-gray-900">
+          <main className="flex min-h-screen w-full max-w-3xl items-center justify-between py-32 px-16 bg-white dark:bg-gray-900">
+            <div className="flex flex-col gap-6">
+              <div className="flex flex-row flex-wrap items-center justify-between w-full">
+              <h1 className="text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
                 Daniel Martez: Portfolio
               </h1>
               <nav>
@@ -56,11 +57,12 @@ export default function RootLayout({
                   </Link>
                 ))}
               </nav>
+              </div>
               <div className="m-10">
               {children}
               </div>
               {/* footer */}
-              <div className="flex p-[5%]">
+              <div className="flex p-[5%] justify-center">
                 <Link
                   href={"https://www.linkedin.com/in/daniel-martez-23a2912b0/"}
                   target="_blank"
@@ -90,7 +92,7 @@ export default function RootLayout({
                     />
                 </Link>
               </div>
-              <p className="dark:text-zinc-50">Created and deployed using Vercel</p>
+              <p className="dark:text-zinc-50 text-center">Created and deployed using Vercel</p>
             </div>
           </main>
         </div>
