@@ -7,8 +7,6 @@ export type Project = {
     links: {label: string, url: string}[]; /* [] empty array at the end means links is an array of objects */
 };
 
-// need type for recent project here. should always update based on the first element in the array
-
 export const projects: Project [] = [
     {
         slug: "photo-gallery",
