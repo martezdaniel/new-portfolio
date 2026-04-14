@@ -44,9 +44,9 @@ export default function RootLayout({
       >
         {/* header and nav bar */}
         <div className="flex min-h-screen bg-zinc-50 font-sans justify-center dark:bg-gray-900">
-          <main className="flex min-h-screen w-full max-w-3xl justify-center py-32 px-16 bg-white dark:bg-gray-900">
+          <main className="flex min-h-screen w-full max-w-4xl justify-center py-32 px-16 bg-white dark:bg-gray-900">
             <div className="flex flex-col gap-6 w-full">
-              <div className="flex flex-row flex-wrap items-center justify-between w-full">
+              <div className="flex flex-col sm:flex-row items-center text-center justify-between w-full gap-4">
               <h1 className="text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
                 Daniel Martez: Portfolio
               </h1>
@@ -58,7 +58,7 @@ export default function RootLayout({
                 ))}
               </nav>
               </div>
-              <div className="m-10 text-center">
+              <div className="mt-6 text-center">
               {children}
               </div>
               {/* footer */}
