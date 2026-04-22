@@ -16,8 +16,8 @@ export default function Home() {
             height={featured.images[1].height}
           />
           <div className="flex flex-col justify-center gap-4">
-          <h2 className="text-2xl font-medium">{featured.title}</h2>
-          <p className="text-lg dark:text-zinc-50">
+          <h2 className="text-2xl text-zinc-700 dark:text-zinc-50 font-medium">{featured.title}</h2>
+          <p className="text-lg text-zinc-700 dark:text-zinc-300">
             {featured.shortdesc}
           </p>
           </div>
