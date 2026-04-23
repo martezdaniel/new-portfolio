@@ -2,6 +2,7 @@ export type Project = {
     key: number;
     slug: string;
     title: string;
+    collaborators?: {key: number, name: string}[];
     description: string;
     shortdesc: string;
     images: {key: number, src: string, alt: string, width: number, height: number}[];
@@ -48,6 +49,24 @@ export const projects: Project [] = [
         key: Math.floor(Math.random() * 10),
         slug: "ucfrugal",
         title: "UCFrugal",
+        collaborators: [
+            {
+                key: Math.floor(Math.random() * 10),
+                name: "Sophie Agudelo"
+            },
+            {
+                key: Math.floor(Math.random() * 10),
+                name: "Lindsey Nielsen"
+            },
+            {
+                key: Math.floor(Math.random() * 10),
+                name: "Jing Li"
+            },
+            {
+                key: Math.floor(Math.random() * 10),
+                name: "Jocelyn Santos"
+            }
+        ],
         description: "This is another group project that I worked on during my final two semesters at UCF, in the fall of 2023 into the spring of 2024. It was a whole new different learning experience that took only a fraction of what I knew with project development, and expanded it much further. Instead of just working on wireframes and brainstorming ideas for a possible project, we had the chance to do that and more by building an actual website for our idea. My assigned roles in the project were to mainly handle bits of the backend, handle parts of our prototyping and use cases, and also perform some research for our authentication feature.       UCFrugal is an advertising website dedicated towards UCF students and staff. We wanted to branch out using the ideas and concepts of other websites such as eBay, Facebook Marketplace, and Craigslist, and make something that resonates more with us, while also attempting to combat the struggles that users face with other advertising and e-commerce websites, whether that be fears of insecure transactions or troubles with trying to search for items listed.       To develop this project, we used Figma for the wireframes, and we used WordPress with a fair amount of plugins (ex: Classified Listings, LoginPress, Elementor, WP 2FA, and Better Messages) to power the site and provide it’s needed functionalities. We also used Flywheel to host the website, but we had to shut down the hosting as we were paying for it out of our own pockets.       Feel free to click the buttons below to see UCFrugal’s documentation and wireframes, as well as our group’s presentations from both the fall and spring semesters we worked in.",
         shortdesc: "Group project that I worked on with four other classmates at UCF during my final fall and spring semester before graduation. Our concept was to create an advertising website specifically for UCF students and staff.",
         images: [
@@ -86,6 +105,24 @@ export const projects: Project [] = [
         key: Math.floor(Math.random() * 10),
         slug: "arthop",
         title: "ArtHop",
+        collaborators: [
+            {
+                key: Math.floor(Math.random() * 10),
+                name: "Jacob Rothstein"
+            },
+            {
+                key: Math.floor(Math.random() * 10),
+                name: "Jolin Garcia"
+            },
+            {
+                key: Math.floor(Math.random() * 10),
+                name: "Kyla Slappey"
+            },
+            {
+                key: Math.floor(Math.random() * 10),
+                name: "Alejandro Montalvo"
+            }
+        ],
         description: "ArtHop is a group project that I worked on with four other classmates during my junior year at the University of Central Florida. We worked on this project during the spring semester of 2023 for a class that was dedicated to design in UI/UX. The goal of this project was to develop an idea for an educational application that we believed would be very helpful and informational for users who want to learn more about art history.",
         shortdesc: "Group project that I worked on at UCF with four other classmates as well. This was presented as more of a concept instead of a website, but it was a project that helped us understand the full process of creating a product that has a purpose to help our target audience.",
         images: [

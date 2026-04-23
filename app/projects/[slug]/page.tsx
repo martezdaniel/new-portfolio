@@ -1,15 +1,18 @@
-'use client'
-// import { useParams } from "next/navigation"
-import { useRouter } from "next/router"
+import { projects } from "@/app/_lib/data";
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import Image from "next/image";
 
-export default function ProjectPage() {
-    // const params = useParams()
-    const router = useRouter()
+export default function ProjectPage({params}: {params: {slug: string}}) {
+    const project = projects.find(p => p.slug === params.slug)
+
+    if (!project) {
+        notFound()
+    }
+
     return (
-        <>
-        <div className="m-10">
-            <h1 className="text-2xl dark:text-zinc-50">Project Name: {router.query.slug}</h1>
+        <div>
+            <h1>{project.title}</h1>
         </div>
-        </>
     )
 }

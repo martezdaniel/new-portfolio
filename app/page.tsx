@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {Project, projects} from "./_lib/data"
+import {projects} from "./_lib/data"
 
 const featured = projects[0]
 
