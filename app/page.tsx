@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {projects} from "./_lib/data"
 
 const featured = projects[0]
@@ -10,7 +11,7 @@ export default function Home() {
         <div className="grid gap-10 w-full p-10">
           <Image
             className="w-full h-auto block object-cover aspect-[2/1] rounded-md ring-3 shadow-lg/50"
-            src={featured.images[1]}
+            src={featured.images[1].src}
             alt={featured.images[1].alt}
             width={featured.images[1].width}
             height={featured.images[1].height}
@@ -20,6 +21,12 @@ export default function Home() {
           <p className="text-lg text-zinc-700 dark:text-zinc-300">
             {featured.shortdesc}
           </p>
+          <Link 
+            href={`/projects/${featured.slug}`}
+            className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors w-fit"
+          >
+            View
+          </Link>
           </div>
         </div>
     </>
