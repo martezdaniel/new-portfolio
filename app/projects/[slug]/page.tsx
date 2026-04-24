@@ -3,8 +3,10 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function ProjectPage({params}: {params: {slug: string}}) {
-    const project = projects.find(p => p.slug === params.slug)
+export default async function ProjectPage({params}: {params: Promise<{slug: string}>}) {
+    // putting slug in curly brackets destructures the variable to keep it all on same line. it still awaits the promise for each project page
+    const {slug} = await params
+    const project = projects.find(p => p.slug === slug)
 
     if (!project) {
         notFound()
@@ -26,7 +28,7 @@ export default function ProjectPage({params}: {params: {slug: string}}) {
             )}
             </div>
             <p className="text-zinc-700 dark:text-zinc-300">{project.description}</p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center">
                 {project.links.map(link => (
                     <Link
                     key={link.key}

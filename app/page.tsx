@@ -21,12 +21,14 @@ export default function Home() {
           <p className="text-lg text-zinc-700 dark:text-zinc-300">
             {featured.shortdesc}
           </p>
+          <div className="p-5">
           <Link 
             href={`/projects/${featured.slug}`}
             className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors w-fit"
           >
             View
           </Link>
+          </div>
           </div>
         </div>
     </>
