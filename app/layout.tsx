@@ -42,7 +42,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* header and nav bar */}
         <div className="flex min-h-screen bg-zinc-50 font-sans justify-center dark:bg-neutral-900">
           {/* Sticky header */}
           <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-neutral-900/95 backdrop-blur-sm border-b border-zinc-200 dark:border-neutral-800 shadow-sm">

@@ -17,7 +17,7 @@ export default async function ProjectPage({params}: {params: Promise<{slug: stri
             <h1 className="text-3xl font-bold">{project.title}</h1>
             <div>
             {project.collaborators && (
-                    <h3>
+                    <h3 className="font-medium">
                         Collaborators: {project.collaborators.map((c, index, arr) => (
                             <span key={c.key}>
                                 {c.name}
@@ -27,7 +27,7 @@ export default async function ProjectPage({params}: {params: Promise<{slug: stri
                     </h3>
             )}
             </div>
-            <p className="text-zinc-700 dark:text-zinc-300">{project.description}</p>
+            <p className="text-zinc-700 dark:text-zinc-300 leading-8">{project.description}</p>
             <div className="flex gap-4 justify-center">
                 {project.links.map(link => (
                     <Link

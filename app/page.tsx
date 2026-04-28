@@ -7,7 +7,7 @@ const featured = projects[0]
 export default function Home() {
   return (
     <section className="w-full">
-        <h1 className="text-4xl font-bold text-zinc-900 dark:text-zinc-50 mb-8">Most Recent Project</h1>
+        <h1 className="text-4xl font-bold text-zinc-900 dark:text-zinc-50 mb-8 text-center">Most Recent Project</h1>
         <div className="bg-white dark:bg-neutral-800 rounded-2xl overflow-hidden border border-zinc-200 dark:border-neutral-700 shadow-lg">
           <div className="aspect-video overflow-hidden">
             <Image

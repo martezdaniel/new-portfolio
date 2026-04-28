@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function Projects() {
    return (
    <section className="w-full">
-    <h1 className="text-4xl font-bold text-zinc-900 dark:text-zinc-50 mb-8">Projects</h1>
+    <h1 className="text-4xl font-bold text-zinc-900 dark:text-zinc-50 mb-8 text-center">Projects</h1>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {projects.map(project => (
          <Link

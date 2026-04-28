@@ -112,7 +112,7 @@ export const projects: Project [] = [
             },
             {
                 key: Math.floor(Math.random() * 10),
-                name: "Jolin Garcia"
+                name: "Jolina Garcia"
             },
             {
                 key: Math.floor(Math.random() * 10),
@@ -128,13 +128,6 @@ export const projects: Project [] = [
         images: [
             {
                 key: Math.floor(Math.random() * 10),
-                src: "/arthop.png",
-                alt: "ArtHop logo",
-                width: 600,
-                height: 338
-            },
-            {
-                key: Math.floor(Math.random() * 10),
                 src: "/arthop2.png",
                 alt: "Screenshot of ArtHop home page",
                 width: 757,
@@ -146,13 +139,6 @@ export const projects: Project [] = [
                 alt: "Screenshot of ArtHop discussion page",
                 width: 746,
                 height: 1477
-            },
-            {
-                key: Math.floor(Math.random() * 10),
-                src: "/arthop4.png",
-                alt: "Screenshot of welcome message from ArtHop login/register screen",
-                width: 1024,
-                height: 489
             }
         ],
         links: [
