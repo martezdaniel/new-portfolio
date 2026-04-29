@@ -50,20 +50,20 @@ export default async function ProjectPage({params}: {params: Promise<{slug: stri
           {project.description}
         </p>
         {/* Project Buttons */}
-        <div className="flex grid grid-cols-2 grid-rows-2 lg:grid-cols-1 lg:grid-rows-1 gap-4 justify-center">
+        <div className="grid grid-cols-2 gap-4">
           {project.links.map((link) => (
             <Link
               key={link.key}
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+              className="flex justify-center text-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
             >
               {link.label}
             </Link>
           ))}
         </div>
-        <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
+        <div className={`grid gap-4 ${project.images.length > 1 ? 'grid-cols-1 md:grid-cols-2' : 'grid-cols-1'}`}>
           {project.images.map((image) => (
             <Image
               key={image.key}
