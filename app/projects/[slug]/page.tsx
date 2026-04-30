@@ -63,6 +63,7 @@ export default async function ProjectPage({params}: {params: Promise<{slug: stri
             </Link>
           ))}
         </div>
+        {/* Conditional styling if the project's image array has more than 1 image, it will split the image display into 2 columns */}
         <div className={`grid gap-4 ${project.images.length > 1 ? 'grid-cols-1 md:grid-cols-2' : 'grid-cols-1'}`}>
           {project.images.map((image) => (
             <Image

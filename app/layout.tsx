@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Daniel Martez - Portfolio",
-  description: "My portfolio website",
+  description: "Portfolio of Daniel Martez. Consists of college and personal web development projects.",
 };
 
 export const viewport = { // will ensure that the content appears normal and viewable on every screen
