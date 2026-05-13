@@ -48,7 +48,7 @@ export default function RootLayout({
             <div className="max-w-4xl mx-auto px-8 py-6">
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                 <h1 className="text-2xl font-bold tracking-tight text-black dark:text-zinc-50">
-                  Daniel Martez: Portfolio
+                  Daniel Martez: Portfolio test
                 </h1>
                 <nav className="flex gap-1">
                   {navLinks.map((x) => (
