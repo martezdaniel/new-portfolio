@@ -2,6 +2,7 @@ export type Project = {
     key: number;
     slug: string;
     title: string;
+    years: string;
     collaborators?: {key: number, name: string}[];
     description: string;
     shortdesc: string;
@@ -14,6 +15,7 @@ export const projects: Project [] = [
         key: Math.floor(Math.random() * 10),
         slug: "photo-gallery",
         title: "Vacation Photo Gallery",
+        years: "2025",
         description: "This is a very simple solo project that I created to give myself a refresher on front-end development. I’ve tried to make projects in the past outside of assingments and school projects but I either didn’t finish them or the idea just felt far out at the time. For me, making this my first deployed project is a great start and I feel very encouraged to push myself into better HTML development.  I always wanted to create a photo gallery of some sort, and I thought that creating one that includes photos of trips that I’ve been on with family is a great way for me to look back on great memories that I’m grateful I got to share with them. This was written only using HTML, CSS, and JavaScript. I designed this project to have responsive view on both desktop and mobile, along with a simple color scheme and font size for better accessibility. I figured a nice light blue/white background would be a nice touch that blends in and fits the theme for each trip. Almost all of the photos consist of nature and outdoors, and for the images that don’t, it still feels like they fit in. Feel free to check out the deployed website and the source code by clicking on the buttons below!",
         shortdesc: "Small HTML project I created to showcase simple skills and display my favorite photos from places I’ve been to.",
         images: [
@@ -49,6 +51,7 @@ export const projects: Project [] = [
         key: Math.floor(Math.random() * 10),
         slug: "ucfrugal",
         title: "UCFrugal",
+        years: "2023 - 2024",
         collaborators: [
             {
                 key: Math.floor(Math.random() * 10),
@@ -105,6 +108,7 @@ export const projects: Project [] = [
         key: Math.floor(Math.random() * 10),
         slug: "arthop",
         title: "ArtHop",
+        years: "2023",
         collaborators: [
             {
                 key: Math.floor(Math.random() * 10),
@@ -124,7 +128,7 @@ export const projects: Project [] = [
             }
         ],
         description: "ArtHop is a group project that I worked on with four other classmates during my junior year at the University of Central Florida. We worked on this project during the spring semester of 2023 for a class that was dedicated to design in UI/UX. The goal of this project was to develop an idea for an educational application that we believed would be very helpful and informational for users who want to learn more about art history.",
-        shortdesc: "Group project that I worked on at UCF with four other classmates as well. This was presented as more of a concept instead of a website, but it was a project that helped us understand the full process of creating a product that has a purpose to help our target audience.",
+        shortdesc: "Group project that I also worked on at UCF with four other classmates. This was presented as more of a concept instead of a website, but it was a project that helped us understand the full process of creating a product that has a purpose to help our target audience.",
         images: [
             {
                 key: Math.floor(Math.random() * 10),

@@ -23,10 +23,13 @@ export default function Projects() {
               height={project.images[0].height}
               />
             </div>
-            <div className="p-6">
+            <div className="p-6 text-center">
                <h2 className="text-xl font-bold text-zinc-900 dark:text-zinc-50 mb-3 group-hover:text-zinc-700 dark:group-hover:text-zinc-300 transition-colors">
                   {project.title}
                </h2>
+               <h4 className="font-semibold text-sm text-zinc-900 mb-3 dark:text-zinc-50 group-hover:text-zinz-700 dark:group-hover:text-zinc-300 transition-colors">
+                  {project.years}
+               </h4>
                <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
                   {project.shortdesc}
                </p>

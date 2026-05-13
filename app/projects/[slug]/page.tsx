@@ -31,7 +31,10 @@ export default async function ProjectPage({params}: {params: Promise<{slug: stri
           </svg>
           Projects
         </Link>
+        <span className="flex gap-3 items-center">
         <h1 className="text-3xl font-bold">{project.title}</h1>
+        <p className="text-zinc-600 dark:text-zinc-400">{project.years}</p>
+        </span>
         <div>
           {project.collaborators && (
             <h3 className="font-medium">
